@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MakDak Token</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@300;500&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Montserrat', sans-serif;
+            background: linear-gradient(120deg, #FF416C, #FF4B2B);
+            color: #fff;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            text-align: center;
+            padding: 1rem;
+            box-sizing: border-box;
+        }
+
+        h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            margin: 0;
+            animation: fadeInDown 1.2s ease;
+        }
+
+        p {
+            font-size: 1.2rem;
+            font-weight: 300;
+            margin-top: 1rem;
+            animation: fadeInUp 1.2s ease;
+        }
+
+        .slogan {
+            margin-top: 2rem;
+            font-family: 'Roboto', sans-serif;
+            font-size: 1rem;
+            font-weight: 500;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeInUp 1.5s ease forwards 2s;
+        }
+
+        .funny-text {
+            position: static;
+            margin-top: 2rem;
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: #FFE135;
+            text-shadow: 2px 2px #FF5733;
+            opacity: 0;
+            animation: fadeInUp 2s ease forwards 3s;
+            padding: 0 1rem;
+            box-sizing: border-box;
+        }
+
+        .buttons {
+            margin-top: 2rem;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            justify-content: center;
+        }
+
+        .button {
+            padding: 0.8rem 1.5rem;
+            font-size: 1rem;
+            font-weight: bold;
+            color: #FF4B2B;
+            background: #fff;
+            border: 2px solid #FF4B2B;
+            border-radius: 30px;
+            cursor: pointer;
+            transition: transform 0.2s, box-shadow 0.2s;
+            flex: 1 1 calc(100% - 2rem);
+            max-width: 200px;
+            box-sizing: border-box;
+        }
+
+        .button:hover {
+            transform: scale(1.1);
+            box-shadow: 0 4px 15px rgba(255, 75, 43, 0.3);
+        }
+
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @media (min-width: 768px) {
+            h1 {
+                font-size: 4rem;
+            }
+
+            p {
+                font-size: 1.5rem;
+            }
+
+            .slogan {
+                font-size: 1.2rem;
+            }
+
+            .funny-text {
+                font-size: 1.5rem;
+                position: absolute;
+                bottom: 10%;
+            }
+
+            .button {
+                flex: none;
+                max-width: none;
+                padding: 1rem 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>MakDak Token</h1>
+    <p>"Криптовалюта с привкусом булочки."</p>
+    <div class="slogan">Покупай MakDak - стань частью сочной булочки! 😈</div>
+    <div class="funny-text">Токен, который не развалится как БигМак!</div>
+
+    <div class="buttons">
+        <button class="button" onclick="window.location.href='https://telegram.org/news'">Перейти в Телеграмм канал</button>
+        <button class="button" onclick="window.location.href='https://telegram.org/buy'">Купить токены</button>
+        <button class="button" onclick="alert('Успешно, теперь вы наш раб!💀💀💀')">Оформить кредит</button>
+    </div>
+</body>
+</html>
+
+
+<style>
+
+</style>
+<script>
+
+</script>
